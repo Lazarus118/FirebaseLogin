@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "552051387577",
+    "firebase_url": "https://aulatech-firebaselogin.firebaseio.com",
+    "project_id": "aulatech-firebaselogin",
+    "storage_bucket": "aulatech-firebaselogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552051387577:android:99dfa0c8f1c9d2a3",
+        "android_client_info": {
+          "package_name": "co.aulatech.firebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552051387577-rjsvks699eis6vca358qr92lmunrcarm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDaLbE24nLyBG7rfhnyEDAoQk71BvFDzw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
