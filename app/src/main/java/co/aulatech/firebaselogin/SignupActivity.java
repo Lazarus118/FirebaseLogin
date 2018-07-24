@@ -111,7 +111,7 @@ public class SignupActivity extends Activity {
                                     // INSERT DB TABLE
                                     // -----------------------------------------------
                                     dbHelper = new DBHelper(getApplicationContext());
-                                    dbHelper.insert(name);
+                                    dbHelper.update(0, name);
 
                                     // Write a message to the get_database (firebase)
                                     // -----------------------------------------------
