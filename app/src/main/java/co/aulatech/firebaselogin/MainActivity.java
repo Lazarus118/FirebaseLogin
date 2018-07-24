@@ -26,6 +26,7 @@ import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity  {
+    DBHelper dbHelper;
     DatabaseReference database;
     TextView username;
     EditText number, location;
@@ -39,6 +40,11 @@ public class MainActivity extends AppCompatActivity  {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // CREATE DEFAULT USER IN INTERNAL DB
+        ////////////////////////////////////////////////////////////////
+        dbHelper = new DBHelper(getApplicationContext());
+        dbHelper.insert("Default");
 
         // AUTHENTICATION
         ////////////////////////////////////////////////////////////////
@@ -124,7 +130,7 @@ public class MainActivity extends AppCompatActivity  {
      * RETRIEVE USERNAME FROM INTERNAL DB
      *********************************************************************************/
     public String getUserFromDB() {
-        DBHelper dbHelper = new DBHelper(this);
+        dbHelper = new DBHelper(this);
         final Cursor cursor = dbHelper.getRecord(1);
         if (cursor.moveToFirst()) {
             user_name = cursor.getString(1);
